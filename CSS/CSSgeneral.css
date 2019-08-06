@@ -1,0 +1,215 @@
+@font-face {
+    font-family: "DINRegular";
+
+    src: url("../Font/DINRegular.ttf");
+}
+
+.Site {
+    display: flex;
+
+    min-height: 100vh;
+
+    flex-direction: column;
+}
+
+.Site-content {
+    flex: 1;
+}
+
+html {
+    font-family: DINRegular;
+}
+
+body {
+    width: 100%;
+
+    margin: 0px;
+
+    padding: 0px;
+}
+
+main {
+    margin: auto;
+
+    width: 70%;
+}
+
+article {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: space-around;
+}
+
+header {
+    z-index: 10;
+
+    width: 100%;
+
+    position: sticky;
+
+    top: 0px;
+
+    background-color: #800000;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+footer {
+    background-color: black;
+
+    color: white;
+}
+
+footer > p {
+    margin: 0px;
+
+    border: 1px solid black;
+
+    text-align: left;
+
+    padding-left: 1em;
+}
+
+nav a {
+    color: black;
+
+    text-decoration: none;
+
+    font-size: 20px;
+}
+
+nav {
+    width: 95%;
+
+    max-width: 850px;
+
+    height: 50px;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    justify-content: flex-start;
+}
+
+div {
+    position: relative;
+}
+
+nav > div {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    width: 95%;
+
+    text-align: center;
+
+    height: 50px;
+}
+
+nav > div:hover {
+    background-color: #990000;
+}
+
+nav > div:hover > .submenu {
+    display: block;
+
+    text-align: center;
+
+    width: 100%;
+}
+
+.submenu {
+    position: absolute;
+
+    top: 50px;
+
+    background-color: #990000;
+
+    display: none;
+}
+
+div.submenu > div > a {
+    border-top: 1px solid #d5dbeb;
+}
+
+div.burger {
+    display: none;
+}
+
+div.burger > img {
+    width: 50px;
+
+    z-index: 500;
+}
+
+@media (max-width: 730px) {
+    header {
+        align-items: flex-start;
+
+        background: none;
+    }
+
+    header > nav {
+        display: none;
+    }
+
+    div.burger {
+        display: flex;
+
+        flex-direction: row;
+
+        align-items: center;
+    }
+
+    div.burger:hover > #menu2 {
+        position: absolute;
+
+        display: flex;
+
+        flex-direction: column;
+
+        top: 50px;
+
+        left: 0px;
+
+        z-index: 1;
+    }
+
+    #menu2 > div {
+        background-color: #990000;
+
+        border: solid;
+
+        border-width: 2px 0px 0px 0px;
+
+        border-color: black;
+    }
+
+    #menu2 a {
+        color: black;
+
+        text-decoration: none;
+
+        font-size: 20px;
+    }
+
+    #menu2 {
+        display: none;
+    }
+}
