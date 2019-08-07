@@ -19,10 +19,18 @@
 }
 
 .submenu {
-    background-color: #900;
+    background-color: #b00;
     display: none;
     position: absolute;
     top: 50px;
+}
+
+.submenu a div {
+    padding: 8px 0;
+}
+
+.submenu a div:hover {
+    background-color: #c00;
 }
 
 article {
@@ -74,17 +82,14 @@ footer > p {
 
 header {
     align-items: center;
-    background-color: maroon;
+    background-color: #900;
     display: flex;
     flex-direction: column;
+    font-family: "Minecraft";
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 10;
-}
-
-header {
-    font-family: "Minecraft";
 }
 
 main {
@@ -113,7 +118,7 @@ nav > div {
 }
 
 nav > div:hover {
-    background-color: #900;
+    background-color: #b00;
 }
 
 nav > div:hover > .submenu {
@@ -123,7 +128,7 @@ nav > div:hover > .submenu {
 }
 
 nav a {
-    color: #000;
+    color: #fff;
     font-size: 20px;
     text-decoration: none;
 }
@@ -134,7 +139,6 @@ nav a {
     }
 
     #menu2 > div {
-        background-color: #900;
         border: solid;
         border-color: #000;
         border-width: 2px 0 0;
