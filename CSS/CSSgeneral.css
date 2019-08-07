@@ -1,151 +1,40 @@
 @font-face {
     font-family: "DINRegular";
-
-    src: url("../Font/DINRegular.ttf");
+    src: url(../Font/DINRegular.ttf);
 }
 
 .Site {
     display: flex;
-
-    min-height: 100vh;
-
     flex-direction: column;
+    min-height: 100vh;
 }
 
 .Site-content {
     flex: 1;
 }
 
-html {
-    font-family: DINRegular;
-}
-
-body {
-    width: 100%;
-
-    margin: 0px;
-
-    padding: 0px;
-}
-
-main {
-    margin: auto;
-
-    width: 70%;
+.submenu {
+    background-color: #900;
+    display: none;
+    position: absolute;
+    top: 50px;
 }
 
 article {
-    display: flex;
-
-    flex-direction: column;
-
     align-items: center;
-
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
 }
 
-header {
-    z-index: 10;
-
+body {
+    margin: 0;
+    padding: 0;
     width: 100%;
-
-    position: sticky;
-
-    top: 0px;
-
-    background-color: #800000;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-}
-
-footer {
-    background-color: black;
-
-    color: white;
-}
-
-footer > p {
-    margin: 0px;
-
-    border: 1px solid black;
-
-    text-align: left;
-
-    padding-left: 1em;
-}
-
-nav a {
-    color: black;
-
-    text-decoration: none;
-
-    font-size: 20px;
-}
-
-nav {
-    width: 95%;
-
-    max-width: 850px;
-
-    height: 50px;
-
-    margin: auto;
-
-    display: flex;
-
-    flex-direction: row;
-
-    align-items: center;
-
-    justify-content: flex-start;
 }
 
 div {
     position: relative;
-}
-
-nav > div {
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    width: 95%;
-
-    text-align: center;
-
-    height: 50px;
-}
-
-nav > div:hover {
-    background-color: #990000;
-}
-
-nav > div:hover > .submenu {
-    display: block;
-
-    text-align: center;
-
-    width: 100%;
-}
-
-.submenu {
-    position: absolute;
-
-    top: 50px;
-
-    background-color: #990000;
-
-    display: none;
-}
-
-div.submenu > div > a {
-    border-top: 1px solid #d5dbeb;
 }
 
 div.burger {
@@ -154,62 +43,120 @@ div.burger {
 
 div.burger > img {
     width: 50px;
-
     z-index: 500;
 }
 
+div.submenu > div > a {
+    border-top: 1px solid #d5dbeb;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+}
+
+footer > p {
+    border: 1px solid #000;
+    margin: 0;
+    padding-left: 1em;
+    text-align: left;
+}
+
+header {
+    align-items: center;
+    background-color: maroon;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+html {
+    font-family: DINRegular;
+}
+
+main {
+    margin: auto;
+    width: 70%;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: flex-start;
+    margin: auto;
+    max-width: 850px;
+    width: 95%;
+}
+
+nav > div {
+    align-items: center;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    text-align: center;
+    width: 95%;
+}
+
+nav > div:hover {
+    background-color: #900;
+}
+
+nav > div:hover > .submenu {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+nav a {
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
+}
+
 @media (max-width: 730px) {
+    #menu2 {
+        display: none;
+    }
+
+    #menu2 > div {
+        background-color: #900;
+        border: solid;
+        border-color: #000;
+        border-width: 2px 0 0;
+    }
+
+    #menu2 a {
+        color: #000;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    div.burger {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+
+    div.burger:hover > #menu2 {
+        display: flex;
+        flex-direction: column;
+        left: 0;
+        position: absolute;
+        top: 50px;
+        z-index: 1;
+    }
+
     header {
         align-items: flex-start;
-
         background: none;
     }
 
     header > nav {
-        display: none;
-    }
-
-    div.burger {
-        display: flex;
-
-        flex-direction: row;
-
-        align-items: center;
-    }
-
-    div.burger:hover > #menu2 {
-        position: absolute;
-
-        display: flex;
-
-        flex-direction: column;
-
-        top: 50px;
-
-        left: 0px;
-
-        z-index: 1;
-    }
-
-    #menu2 > div {
-        background-color: #990000;
-
-        border: solid;
-
-        border-width: 2px 0px 0px 0px;
-
-        border-color: black;
-    }
-
-    #menu2 a {
-        color: black;
-
-        text-decoration: none;
-
-        font-size: 20px;
-    }
-
-    #menu2 {
         display: none;
     }
 }
