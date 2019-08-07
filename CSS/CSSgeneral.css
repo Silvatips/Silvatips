@@ -69,15 +69,13 @@ div.submenu > div > a {
 }
 
 footer {
-    background-color: #000;
-    color: #fff;
-}
-
-footer > p {
-    border: 1px solid #000;
+    background-color: #323232;
+    border: 1px solid #1e1e1e;
+    color: #a9a9a9;
+    font-size: 12px;
     margin: 0;
-    padding-left: 1em;
-    text-align: left;
+    padding: 0;
+    text-align: center;
 }
 
 header {
