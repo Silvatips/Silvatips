@@ -1,0 +1,9 @@
+body {
+    width: 70%;
+    margin: 0px;
+    padding: 0px;
+    background-image:url("./../../Images/error_404.png");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+}

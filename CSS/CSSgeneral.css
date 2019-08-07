@@ -1,215 +1,327 @@
 @font-face {
-    font-family: "DINRegular";
 
-    src: url("../Font/DINRegular.ttf");
+	font-family: "DINRegular";
+
+	src: url("../Font/DINRegular.ttf");
+
 }
+
+
 
 .Site {
-    display: flex;
 
-    min-height: 100vh;
+	display: flex;
 
-    flex-direction: column;
+	min-height: 100vh;
+
+	flex-direction: column;
+
 }
+
+
 
 .Site-content {
-    flex: 1;
+
+ 	flex: 1;
+
 }
+
+
 
 html {
-    font-family: DINRegular;
+
+	font-family: DINRegular;
+
 }
+
+
 
 body {
-    width: 100%;
 
-    margin: 0px;
+	width: 100%;
 
-    padding: 0px;
+	margin: 0px;
+
+	padding: 0px;
+
 }
+
+
 
 main {
-    margin: auto;
 
-    width: 70%;
+	margin: auto;
+
+	width: 70%;
+
 }
+
+
 
 article {
-    display: flex;
 
-    flex-direction: column;
+	display: flex;
 
-    align-items: center;
+	flex-direction: column;
 
-    justify-content: space-around;
+	align-items: center;
+
+	justify-content: space-around;
+
 }
+
+
 
 header {
-    z-index: 10;
 
-    width: 100%;
+	z-index: 10;
 
-    position: sticky;
+	width: 100%;
 
-    top: 0px;
+	position: sticky;
 
-    background-color: #800000;
+	top: 0px;
 
-    display: flex;
+	background-color: #800000;
 
-    flex-direction: column;
+	display: flex;
 
-    align-items: center;
+	flex-direction: column;
+
+	align-items: center;
+
 }
+
+
 
 footer {
-    background-color: black;
 
-    color: white;
+	background-color: black;
+
+	color: white;
+
 }
+
+
 
 footer > p {
-    margin: 0px;
 
-    border: 1px solid black;
+	margin: 0px;
 
-    text-align: left;
+	border: 1px solid black;
 
-    padding-left: 1em;
+	text-align: left;
+
+	padding-left: 1em;
+
 }
+
+
 
 nav a {
-    color: black;
 
-    text-decoration: none;
+	color: black;
 
-    font-size: 20px;
+	text-decoration: none;
+
+	font-size: 20px;
+
 }
+
+
 
 nav {
-    width: 95%;
 
-    max-width: 850px;
+	width: 95%;
 
-    height: 50px;
+	max-width: 850px;
 
-    margin: auto;
+	height: 50px;
 
-    display: flex;
+	margin: auto;
 
-    flex-direction: row;
+	display: flex;
 
-    align-items: center;
+	flex-direction: row;
 
-    justify-content: flex-start;
+	align-items: center;
+
+	justify-content: flex-start;
+
 }
+
+
 
 div {
-    position: relative;
+
+	position: relative;
+
 }
+
+
 
 nav > div {
-    display: flex;
 
-    justify-content: center;
+	display: flex;
 
-    align-items: center;
+	justify-content: center;
 
-    width: 95%;
+	align-items: center;
 
-    text-align: center;
+	width: 95%;
 
-    height: 50px;
+	text-align: center;
+
+	height: 50px;
+
 }
+
+
 
 nav > div:hover {
-    background-color: #990000;
+
+	background-color: #990000;
+
 }
+
+
 
 nav > div:hover > .submenu {
-    display: block;
 
-    text-align: center;
+	display: block;
 
-    width: 100%;
+	text-align: center;
+
+	width: 100%;
+
 }
+
+
 
 .submenu {
-    position: absolute;
 
-    top: 50px;
+	position: absolute;
 
-    background-color: #990000;
+	top: 50px;
 
-    display: none;
+	background-color: #990000;
+
+	display: none;
+
 }
+
+
 
 div.submenu > div > a {
-    border-top: 1px solid #d5dbeb;
+
+	border-top: 1px solid #D5DBEB;
+
 }
+
+
 
 div.burger {
-    display: none;
+
+	display: none;
+
 }
+
+
 
 div.burger > img {
-    width: 50px;
 
-    z-index: 500;
+	width: 50px;
+
+	z-index: 500;
+
 }
 
-@media (max-width: 730px) {
-    header {
-        align-items: flex-start;
 
-        background: none;
-    }
 
-    header > nav {
-        display: none;
-    }
+@media(max-width: 730px) {
 
-    div.burger {
-        display: flex;
 
-        flex-direction: row;
 
-        align-items: center;
-    }
+	header {
 
-    div.burger:hover > #menu2 {
-        position: absolute;
+		align-items: flex-start;
 
-        display: flex;
+		background: none;
 
-        flex-direction: column;
+	}
 
-        top: 50px;
 
-        left: 0px;
 
-        z-index: 1;
-    }
+	header > nav {
 
-    #menu2 > div {
-        background-color: #990000;
+		display: none;
 
-        border: solid;
+	}
 
-        border-width: 2px 0px 0px 0px;
 
-        border-color: black;
-    }
 
-    #menu2 a {
-        color: black;
+	div.burger {
 
-        text-decoration: none;
+		display: flex;
 
-        font-size: 20px;
-    }
+		flex-direction: row;
 
-    #menu2 {
-        display: none;
-    }
+		align-items: center;
+
+	}
+
+
+
+	div.burger:hover > #menu2 {
+
+		position: absolute;
+
+		display: flex;
+
+		flex-direction: column;
+
+		top: 50px;
+
+		left: 0px;
+
+		z-index: 1;
+
+	}
+
+
+
+	#menu2 > div {
+
+		background-color: #990000;
+
+		border: solid;
+
+		border-width: 2px 0px 0px 0px;
+
+		border-color: black;
+
+	}
+
+
+
+	#menu2 a {
+
+		color: black;
+
+		text-decoration: none;
+
+		font-size: 20px;
+
+	}
+
+
+
+	#menu2 {
+
+		display: none;
+
+	}
+
+
+
 }
