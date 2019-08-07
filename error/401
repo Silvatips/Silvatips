@@ -1,0 +1,7 @@
+<html>
+  <head/head>
+	<body>
+		<p>Erreur 401!</p>
+		<p>Vous n'êtes pas authentifié !</p>
+	</body>
+</html>
