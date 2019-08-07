@@ -3,6 +3,11 @@
     src: url(../Font/DINRegular.ttf);
 }
 
+@font-face {
+    font-family: "Minecraft";
+    src: url(../Font/Minecraft.ttf);
+}
+
 .Site {
     display: flex;
     flex-direction: column;
@@ -31,6 +36,11 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
+}
+
+body,
+footer {
+    font-family: "DINRegular";
 }
 
 div {
@@ -73,8 +83,8 @@ header {
     z-index: 10;
 }
 
-html {
-    font-family: DINRegular;
+header {
+    font-family: "Minecraft";
 }
 
 main {
