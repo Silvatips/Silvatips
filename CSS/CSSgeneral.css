@@ -41,6 +41,8 @@ article {
 }
 
 body {
+    background-color: rgb(59, 59, 59);
+    color: lightgray;
     margin: 0;
     padding: 0;
     width: 100%;
