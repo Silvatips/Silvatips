@@ -8,14 +8,20 @@
     src: url(../Font/Minecraft.ttf);
 }
 
+
+
 .Site {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
+
+
 .Site-content {
-    flex: 1;
+
+ 	flex: 1;
+
 }
 
 .submenu {
@@ -32,6 +38,8 @@
 .submenu a div:hover {
     background-color: #c00;
 }
+
+
 
 article {
     align-items: center;
@@ -68,10 +76,14 @@ div.submenu > div > a {
     border-top: 1px solid #d5dbeb;
 }
 
+
+
 footer {
     background-color: #000;
     color: #fff;
 }
+
+
 
 footer > p {
     border: 1px solid #000;
@@ -108,6 +120,8 @@ nav {
     width: 95%;
 }
 
+
+
 nav > div {
     align-items: center;
     display: flex;
@@ -117,9 +131,13 @@ nav > div {
     width: 95%;
 }
 
+
+
 nav > div:hover {
     background-color: #b00;
 }
+
+
 
 nav > div:hover > .submenu {
     display: block;
