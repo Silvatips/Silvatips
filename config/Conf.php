@@ -4,11 +4,10 @@
 		//Variables
 
 		static private $database = array(
-		    //Voltis: Je l'ai mis a jour
 			'hostname' => 'localhost',
-			'database' => 'id10168254_mtips1',
-			'login' => 'id10168254_mtips1',
-			'password' => 'Mtipscestsuper66');
+			'database' => 'silvatips',
+			'login' => 'root',
+			'password' => '');
 
 		//La variable debug est un boolean
 		static private $debug = True;
