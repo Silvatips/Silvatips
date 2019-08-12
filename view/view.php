@@ -4,7 +4,6 @@
 		<meta charset="utf-8">
 		<meta name="theme-color" content="#800000">
 		<title> <?php echo $pagetitle;?></title>
-		<link rel="icon" type="image/png" href="../Images/favico.ico">
 		<link rel="stylesheet" type="text/css" href="../CSS/CSSgeneral.css?v=refreshauto">
 	</head>
 	<header>
